@@ -1,26 +1,10 @@
-<p align="center">
+Campus Companion
 
-&nbsp; <h1 align="center">Campus Companion</h1>
-
-&nbsp; <p align="center">A unified full-stack platform to simplify and enhance campus management for students, faculty, and administrators.</p>
-
-</p>
+===============
 
 
 
----
-
-
-
-\## Overview
-
-
-
-Campus Companion is a full-stack application designed to streamline campus operations.
-
-It centralizes communication, attendance tracking, event management, and academic updates in one platform.
-
-Built with modern technologies, it offers real-time synchronization, secure access, and a clean, responsive interface.
+Campus Companion is a simple web application designed to guide new diploma students, especially those joining directly in the second year, to understand the campus better. It works like a digital handbook that introduces the college, departments, staff, and facilities.
 
 
 
@@ -28,23 +12,13 @@ Built with modern technologies, it offers real-time synchronization, secure acce
 
 
 
-\## Features
+Overview
+
+--------
 
 
 
-\- User Authentication: Secure sign-in and role-based access for students, faculty, and admins.
-
-\- Attendance Management: Real-time attendance tracking and updates.
-
-\- Event Management: Creation, registration, and display of campus events.
-
-\- Announcements: Faculty can post official notices visible to specific departments or globally.
-
-\- Feedback \& Queries: Anonymous feedback and query submission for improved engagement.
-
-\- Dashboard Analytics: Visual summary of attendance, performance, and participation.
-
-\- Responsive Design: Optimized for desktop, tablet, and mobile devices.
+Campus Companion helps students settle into college life by giving them clear, organized information about the campus. It provides details about departments, faculty, laboratories, events, and available student services, all in one accessible website.
 
 
 
@@ -52,41 +26,19 @@ Built with modern technologies, it offers real-time synchronization, secure acce
 
 
 
-\## Tech Stack
+Core Purpose
+
+------------
 
 
 
-\### Backend
+\- Guide new students in exploring the campus and its resources.
 
-\- Java 21 with Spring Boot
+\- Provide easy access to essential academic and non-academic information.
 
-\- Maven for dependency management
+\- Help direct second-year diploma students integrate smoothly into college life.
 
-\- MySQL for persistent storage
-
-\- Spring Security with JWT Authentication
-
-\- RESTful APIs for frontend communication
-
-
-
-\### Frontend
-
-\- React.js for component-based UI
-
-\- Tailwind CSS for modern styling
-
-\- Axios for API integration
-
-
-
-\### Development Tools
-
-\- Git and GitHub for version control
-
-\- Postman for API testing
-
-\- Render / Railway / Netlify for deployment
+\- Act as a digital orientation tool for students and visitors.
 
 
 
@@ -94,7 +46,53 @@ Built with modern technologies, it offers real-time synchronization, secure acce
 
 
 
-\## Folder Structure
+Key Features
+
+------------
+
+
+
+\- About section describing the college and its departments.
+
+\- Campus layout or map to help locate buildings and offices.
+
+\- Information on labs, classrooms, and facilities.
+
+\- Faculty and department contact information.
+
+\- Timetable or syllabus links.
+
+\- News and events section for current campus activities.
+
+\- Fully responsive design for desktop and mobile.
+
+
+
+---
+
+
+
+Technology Stack
+
+----------------
+
+
+
+Frontend: HTML, CSS, JavaScript (or React.js)  
+
+Backend (optional): Node.js / Express for dynamic content  
+
+Deployment: GitHub Pages, Netlify, or Render  
+
+
+
+---
+
+
+
+Folder Structure
+
+----------------
 
 
 
@@ -102,27 +100,23 @@ Campus-Companion/
 
 │
 
-├── backend/
-
-│   ├── src/
-
-│   ├── pom.xml
-
-│   ├── target/ (ignored)
-
-│   └── campus-companion/
-
-│
-
 ├── frontend/
 
-│   ├── src/
+│   ├── index.html
 
-│   ├── public/
+│   ├── about.html
 
-│   ├── package.json
+│   ├── departments.html
 
-│   └── node\_modules/ (ignored)
+│   ├── events.html
+
+│   ├── contact.html
+
+│   ├── css/
+
+│   ├── js/
+
+│   └── images/
 
 │
 
@@ -134,71 +128,37 @@ Campus-Companion/
 
 
 
-\## Installation and Setup
+Setup and Usage
+
+---------------
 
 
 
-\### Prerequisites
+1\. Clone the repository  
 
-\- Node.js (v18 or higher)
-
-\- Java 21
-
-\- MySQL Server
-
-\- Maven
-
-
-
-\### Steps
-
-
-
-1\. Clone the Repository
-
-&nbsp;  git clone https://github.com/sidhuthisside/Campus-Companion.git
+&nbsp;  git clone https://github.com/sidhuthisside/Campus-Companion.git  
 
 &nbsp;  cd Campus-Companion
 
 
 
-2\. Backend Setup
+2\. Open the website  
 
-&nbsp;  cd backend
+&nbsp;  - Open frontend/index.html in a browser  
 
-&nbsp;  mvn clean install
+&nbsp;  or  
 
-&nbsp;  mvn spring-boot:run
+&nbsp;  - Run a local server:  
 
-&nbsp;  The backend will start at http://localhost:8080.
+&nbsp;    npx serve frontend  
 
-
-
-3\. Frontend Setup
-
-&nbsp;  cd frontend
-
-&nbsp;  npm install
-
-&nbsp;  npm start
-
-&nbsp;  The frontend will start at http://localhost:3000.
+&nbsp;    Then open http://localhost:3000
 
 
 
-4\. Database Configuration
+3\. Deploy online  
 
-&nbsp;  Update the following properties in
-
-&nbsp;  backend/src/main/resources/application.properties:
-
-
-
-&nbsp;  spring.datasource.url=jdbc:mysql://localhost:3306/campus\_db
-
-&nbsp;  spring.datasource.username=root
-
-&nbsp;  spring.datasource.password=your\_password
+&nbsp;  - Upload the frontend folder to GitHub Pages or Netlify.
 
 
 
@@ -206,35 +166,25 @@ Campus-Companion/
 
 
 
-\## API Endpoints (Sample)
+Content Outline
+
+---------------
 
 
 
-| Method | Endpoint | Description |
+Home: Welcome message and quick college intro  
 
-|--------|-----------|-------------|
+About: History, vision, achievements  
 
-| POST | /api/auth/login | Login user |
+Departments: Diploma branches and faculty info  
 
-| POST | /api/auth/register | Register new user |
+Campus Map: Visual layout of key buildings  
 
-| GET | /api/events | Fetch all events |
+Facilities: Library, canteen, labs, and support services  
 
-| POST | /api/attendance/mark | Mark attendance |
+Events: College fests, seminars, workshops  
 
-| GET | /api/announcements | Fetch all announcements |
-
-
-
----
-
-
-
-\## Screenshots
-
-
-
-Add screenshots of the login page, dashboard, or event management page here for visual context.
+Contact: College address, phone, and emails
 
 
 
@@ -242,29 +192,21 @@ Add screenshots of the login page, dashboard, or event management page here for 
 
 
 
-\## Future Enhancements
+Future Enhancements
+
+-------------------
 
 
 
-\- Integration with cloud-based notifications
+\- Virtual campus tour with images  
 
-\- AI-powered student engagement insights
+\- FAQ or chatbot for common queries  
 
-\- Role-specific analytics dashboards
+\- Google Maps integration  
 
-\- Automated attendance using face recognition
+\- Light/Dark mode toggle  
 
-
-
----
-
-
-
-\## License
-
-
-
-This project is licensed under the MIT License.
+\- Testimonials from students
 
 
 
@@ -272,11 +214,257 @@ This project is licensed under the MIT License.
 
 
 
-<p align="center">
+License
 
-&nbsp; Developed and maintained by <strong><a href="https://github.com/sidhuthisside" target="\_blank">Sidhant Mattoo</a></strong>
+-------
 
-</p>
+
+
+MIT License
+
+
+
+---
+
+
+
+Maintained by: Sidhant Mattoo  
+
+GitHub: https://github.com/sidhuthisside
+
+Campus Companion
+
+===============
+
+
+
+Campus Companion is a simple web application designed to guide new diploma students, especially those joining directly in the second year, to understand the campus better. It works like a digital handbook that introduces the college, departments, staff, and facilities.
+
+
+
+---
+
+
+
+Overview
+
+--------
+
+
+
+Campus Companion helps students settle into college life by giving them clear, organized information about the campus. It provides details about departments, faculty, laboratories, events, and available student services, all in one accessible website.
+
+
+
+---
+
+
+
+Core Purpose
+
+------------
+
+
+
+\- Guide new students in exploring the campus and its resources.
+
+\- Provide easy access to essential academic and non-academic information.
+
+\- Help direct second-year diploma students integrate smoothly into college life.
+
+\- Act as a digital orientation tool for students and visitors.
+
+
+
+---
+
+
+
+Key Features
+
+------------
+
+
+
+\- About section describing the college and its departments.
+
+\- Campus layout or map to help locate buildings and offices.
+
+\- Information on labs, classrooms, and facilities.
+
+\- Faculty and department contact information.
+
+\- Timetable or syllabus links.
+
+\- News and events section for current campus activities.
+
+\- Fully responsive design for desktop and mobile.
+
+
+
+---
+
+
+
+Technology Stack
+
+----------------
+
+
+
+Frontend: HTML, CSS, JavaScript (or React.js)  
+
+Backend (optional): Node.js / Express for dynamic content  
+
+Deployment: GitHub Pages, Netlify, or Render  
+
+
+
+---
+
+
+
+Folder Structure
+
+----------------
+
+
+
+Campus-Companion/
+
+│
+
+├── frontend/
+
+│   ├── index.html
+
+│   ├── about.html
+
+│   ├── departments.html
+
+│   ├── events.html
+
+│   ├── contact.html
+
+│   ├── css/
+
+│   ├── js/
+
+│   └── images/
+
+│
+
+└── README.md
+
+
+
+---
+
+
+
+Setup and Usage
+
+---------------
+
+
+
+1\. Clone the repository  
+
+&nbsp;  git clone https://github.com/sidhuthisside/Campus-Companion.git  
+
+&nbsp;  cd Campus-Companion
+
+
+
+2\. Open the website  
+
+&nbsp;  - Open frontend/index.html in a browser  
+
+&nbsp;  or  
+
+&nbsp;  - Run a local server:  
+
+&nbsp;    npx serve frontend  
+
+&nbsp;    Then open http://localhost:3000
+
+
+
+3\. Deploy online  
+
+&nbsp;  - Upload the frontend folder to GitHub Pages or Netlify.
+
+
+
+---
+
+
+
+Content Outline
+
+---------------
+
+
+
+Home: Welcome message and quick college intro  
+
+About: History, vision, achievements  
+
+Departments: Diploma branches and faculty info  
+
+Campus Map: Visual layout of key buildings  
+
+Facilities: Library, canteen, labs, and support services  
+
+Events: College fests, seminars, workshops  
+
+Contact: College address, phone, and emails
+
+
+
+---
+
+
+
+Future Enhancements
+
+-------------------
+
+
+
+\- Virtual campus tour with images  
+
+\- FAQ or chatbot for common queries  
+
+\- Google Maps integration  
+
+\- Light/Dark mode toggle  
+
+\- Testimonials from students
+
+
+
+---
+
+
+
+License
+
+-------
+
+
+
+MIT License
+
+
+
+---
+
+
+
+Maintained by: Sidhant Mattoo  
+
+GitHub: https://github.com/sidhuthisside
 
 
 
