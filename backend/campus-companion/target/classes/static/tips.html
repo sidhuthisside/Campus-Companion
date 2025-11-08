@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Tips - Campus Companion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Campus Companion Logo">
+                <h1>Campus Companion</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="procedures.html">Procedures</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="tips.html" class="active">Tips</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Student Success Tips</h2>
+            <p>Practical advice from experienced students to help you navigate college life</p>
+        </div>
+    </section>
+
+    <!-- Tips Categories -->
+    <section class="tips-categories">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Tips</button>
+                <button class="category-btn" data-category="academic">Academic</button>
+                <button class="category-btn" data-category="time">Time Management</button>
+                <button class="category-btn" data-category="social">Social</button>
+                <button class="category-btn" data-category="wellness">Wellness</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Grid -->
+    <section class="tips-grid">
+        <div class="container">
+            <div class="tips-container">
+                <div class="tip-card" data-category="academic">
+                    <div class="tip-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Develop a Study System</h3>
+                    <p>Create a consistent study routine rather than cramming. Study in shorter, focused sessions with breaks in between. Use active learning techniques like summarizing, teaching concepts to others, or creating flashcards.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Academic</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="time">
+                    <div class="tip-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Use a Planner</h3>
+                    <p>Whether digital or paper, a planner is essential for tracking assignments, exams, and deadlines. Review your planner daily and plan your week every Sunday evening to stay on top of your responsibilities.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Time Management</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="academic">
+                    <div class="tip-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Form Study Groups</h3>
+                    <p>Connect with classmates to form study groups. Explaining concepts to others reinforces your own understanding, and you'll benefit from different perspectives. Keep groups focused and productive.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Academic</span>
+                        <span class="tag">Social</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="wellness">
+                    <div class="tip-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Prioritize Sleep</h3>
+                    <p>Aim for 7-9 hours of quality sleep each night. Sleep is crucial for memory consolidation and cognitive function. Establish a consistent sleep schedule, even on weekends, for better academic performance.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Wellness</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="time">
+                    <div class="tip-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Break Down Large Projects</h3>
+                    <p>Divide major assignments into smaller, manageable tasks with their own deadlines. This prevents procrastination and reduces stress. Use the "chunking" method to tackle complex projects systematically.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Time Management</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="social">
+                    <div class="tip-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Build Relationships with Professors</h3>
+                    <p>Attend office hours, participate in class, and show genuine interest in the subject. These relationships can lead to research opportunities, strong recommendation letters, and valuable mentorship.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Social</span>
+                        <span class="tag">Academic</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="wellness">
+                    <div class="tip-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Maintain a Balanced Diet</h3>
+                    <p>Don't rely solely on fast food and snacks. Incorporate fruits, vegetables, and protein into your meals. Meal prepping on weekends can help you eat healthier during busy weeks.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Wellness</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="academic">
+                    <div class="tip-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Find Your Ideal Study Spots</h3>
+                    <p>Experiment with different environments to discover where you study most effectively. Options include the library, quiet coffee shops, empty classrooms, or dedicated study rooms.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Academic</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="social">
+                    <div class="tip-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Get Involved on Campus</h3>
+                    <p>Join clubs, organizations, or intramural sports that interest you. Campus involvement helps you build community, develop leadership skills, and create a more balanced college experience.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Social</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="time">
+                    <div class="tip-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Use the Pomodoro Technique</h3>
+                    <p>Work in focused 25-minute intervals followed by 5-minute breaks. After four cycles, take a longer 15-30 minute break. This technique can improve focus and prevent burnout during long study sessions.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Time Management</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="wellness">
+                    <div class="tip-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Incorporate Physical Activity</h3>
+                    <p>Regular exercise reduces stress, improves mood, and boosts energy. Even 30 minutes of activity most days can make a significant difference. Use campus recreation facilities or simply take walking breaks between classes.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Wellness</span>
+                    </div>
+                </div>
+                <div class="tip-card" data-category="academic">
+                    <div class="tip-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Utilize Campus Resources</h3>
+                    <p>Take advantage of tutoring centers, writing labs, career services, and academic advisors. These resources are included in your tuition and can significantly support your academic success.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Academic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Campus Companion</h3>
+                    <p>Your guide to navigating college life efficiently.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="procedures.html">Procedures</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> Pccoe</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Sector No 26 Pradhikaran pccoepune</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Campus Companion. All rights reserved by Sidhant Mattoo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

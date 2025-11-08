@@ -1,0 +1,109 @@
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content, .hero-image {
+        flex: none;
+        width: 100%;
+    }
+    
+    .overview-content {
+        flex-direction: column;
+    }
+    
+    .overview-text, .overview-image {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    nav ul {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+    
+    nav ul.active {
+        left: 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .page-header h2 {
+        font-size: 2rem;
+    }
+    
+    .department-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .procedures-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-buttons {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .quick-links, .features, .departments, .department-overview, 
+    .faculty-contacts, .student-procedures, .faq-search, 
+    .faq-categories, .faq-accordion, .contact-prompt, .tips-grid {
+        padding: 60px 0;
+    }
+    
+    .cards-grid, .features-grid, .departments-grid, .tips-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .accordion-header {
+        padding: 15px 20px;
+    }
+    
+    .accordion-content {
+        padding: 0 20px;
+    }
+    
+    .accordion-content.active {
+        padding: 15px 20px;
+    }
+}

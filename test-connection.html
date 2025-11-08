@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Connection Test - Campus Companion</title>
+    <script src="js/api.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        .status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .data-display {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Campus Companion Backend Connection Test</h1>
+        
+        <div id="status-display">
+            <div class="info">Click "Test Connection" to check backend status</div>
+        </div>
+        
+            <div class="test-panel">
+                <h2>Backend Connection Test</h2>
+                <button onclick="testConnection()">Test Backend Connection</button>
+                <button onclick="clearResults()">Clear Results</button>
+            </div>
+        
+        <div id="results" class="data-display" style="display: none;">
+            <h3>API Response:</h3>
+            <pre id="response-data"></pre>
+        </div>
+        
+        <div id="instructions">
+            <h3>📋 Setup Instructions:</h3>
+            <ol>
+                <li><strong>Start Backend:</strong> Run <code>start-backend.bat</code> in the root directory</li>
+                <li><strong>Start Frontend:</strong> Run <code>start-frontend.bat</code> in another terminal</li>
+                <li><strong>Test Connection:</strong> Click the button above to test the API connection</li>
+            </ol>
+            
+            <h3>🔧 Backend URLs:</h3>
+            <ul>
+                <li>Health Check: <code>http://localhost:8080/campus-companion/health</code></li>
+                <li>Departments: <code>http://localhost:8080/campus-companion/department?action=list</code></li>
+                <li>Users: <code>http://localhost:8080/campus-companion/user?action=list</code></li>
+                <li>Login: <code>http://localhost:8080/campus-companion/user?action=login</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script>
+        // Initialize API client
+        const api = new CampusCompanionAPI();
+
+        // Update status display
+        function updateStatus(message, type = 'info') {
+            const statusDiv = document.getElementById('status-display');
+            statusDiv.innerHTML = `<div class="${type}">${message}</div>`;
+        }
+        
+        // Show formatted results
+        function showResults(data) {
+            const resultsDiv = document.getElementById('results');
+            const responseData = document.getElementById('response-data');
+            resultsDiv.style.display = 'block';
+            responseData.textContent = JSON.stringify(data, null, 2);
+        }
+        
+        // Clear results
+        function clearResults() {
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('response-data').textContent = '';
+            updateStatus('Results cleared. Click Test Backend Connection to try again.', 'info');
+        }
+        
+        // Test backend connection
+        async function testConnection() {
+            updateStatus('Testing backend connection...', 'info');
+            try {
+                const response = await api.testConnection();
+                if (response.status === 'success') {
+                    updateStatus(`✅ ${response.message}`, 'success');
+                } else {
+                    updateStatus('⚠️ API responded but with unexpected status', 'error');
+                }
+                showResults(response);
+            } catch (error) {
+                updateStatus('❌ API connection failed. Check if backend is running.', 'error');
+                showResults({ error: error.message });
+            }
+        }
+    </script>
+</body>
+</html>
+

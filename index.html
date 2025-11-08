@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusMate PCCOE- Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/visual-enhancements.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Campus Companion Logo">
+                <h1>CampusMate PCCOE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="procedures.html">Procedures</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>PCCOE Campus Guide</span>
+                </div>
+                <h2>Your Guide to Navigating <span class="highlight">College Life</span></h2>
+                <p>Everything second-year students need to know about departments, procedures, and campus resources in one place.</p>
+                <div class="hero-buttons">
+                    <a href="#quick-links" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>8+</h3>
+                        <p>Departments</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Procedures</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Student Focused</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="images/hero-bg.jpg" alt="Students on campus">
+                    <div class="image-overlay">
+                        <div class="floating-icon icon-1">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="floating-icon icon-2">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="floating-icon icon-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section id="quick-links" class="quick-links">
+        <div class="section-background">
+            <div class="pattern-dots"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Quick Access</h2>
+                <p>Navigate your campus journey with ease</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card card-1">
+                    <div class="card-background"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-building"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Departments</h3>
+                    <p>Explore all academic departments, faculty contacts, and resources.</p>
+                    <a href="departments.html" class="card-link">
+                        <span>Explore Departments</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-decoration"></div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-background"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Procedures</h3>
+                    <p>Step-by-step guides for common student procedures and paperwork.</p>
+                    <a href="procedures.html" class="card-link">
+                        <span>View Procedures</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-decoration"></div>
+                </div>
+                <div class="card card-3">
+                    <div class="card-background"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-question-circle"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>FAQs</h3>
+                    <p>Find answers to frequently asked questions about college life.</p>
+                    <a href="faqs.html" class="card-link">
+                        <span>Browse FAQs</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-decoration"></div>
+                </div>
+                <div class="card card-4">
+                    <div class="card-background"></div>
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Student Tips</h3>
+                    <p>Practical advice from experienced students to help you succeed.</p>
+                    <a href="tips.html" class="card-link">
+                        <span>Get Tips</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="card-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="features-background">
+            <div class="geometric-shapes">
+                <div class="geo-shape geo-1"></div>
+                <div class="geo-shape geo-2"></div>
+                <div class="geo-shape geo-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Use Campus Companion?</h2>
+                <p>Experience the difference with our student-centric approach</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature feature-1">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Easy Navigation</h3>
+                    <p>Find your way around campus departments and resources with ease.</p>
+                    <div class="feature-number">01</div>
+                </div>
+                <div class="feature feature-2">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-clock"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Save Time</h3>
+                    <p>Quick access to procedures and contacts saves you valuable time.</p>
+                    <div class="feature-number">02</div>
+                </div>
+                <div class="feature feature-3">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-users"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Student-Focused</h3>
+                    <p>Designed specifically for second-year college students' needs.</p>
+                    <div class="feature-number">03</div>
+                </div>
+                <div class="feature feature-4">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access information on the go with our responsive design.</p>
+                    <div class="feature-number">04</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Students Say</h2>
+                <p>Real feedback from PCCOE students</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Campus Companion made finding department contacts so much easier. Saved me hours of searching!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <span>Computer Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The procedures section is a lifesaver! Everything I need is organized and easy to follow."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Rahul Kumar</h4>
+                                <span>Information Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Perfect for second-year students like me. The tips section has been incredibly helpful!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Anjali Patel</h4>
+                                <span>Electronics Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-background">
+            <div class="footer-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>CampusMate PCCOE</h3>
+                    </div>
+                    <p>Your comprehensive guide to navigating college life efficiently and successfully.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                            <div class="icon-hover"></div>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                            <div class="icon-hover"></div>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                            <div class="icon-hover"></div>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="icon-hover"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="departments.html"><i class="fas fa-building"></i> Departments</a></li>
+                        <li><a href="procedures.html"><i class="fas fa-clipboard-list"></i> Procedures</a></li>
+                        <li><a href="faqs.html"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                        <li><a href="tips.html"><i class="fas fa-lightbulb"></i> Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Pccoeitdept@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>020-27600061-2222</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Sector No 26, Pradhikaran, Pimpri Chinchwad College of Engineering</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 CampusMate PCCOE. All rights reserved by <strong>Sidhant Mattoo</strong>.</p>
+                    <div class="footer-badges">
+                        <span class="badge">Made with ❤️ for Students</span>
+                        <span class="badge">PCCOE Approved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize API connection when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if backend is running
+            window.CampusAPI.checkBackendConnection().then(isConnected => {
+                if (isConnected) {
+                    console.log('✅ Backend connected successfully');
+                    // Load dynamic data from backend
+                    loadDepartments();
+                    loadProcedures();
+                    loadFAQs();
+                    loadTips();
+                } else {
+                    console.log('⚠️ Backend not connected, using static content');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

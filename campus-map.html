@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Map - Campus Companion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Campus Companion Logo">
+                <h1>Campus Companion</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="procedures.html">Procedures</a></li>
+                    <li><a href="campus-map.html" class="active">Campus Map</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Campus Map</h2>
+            <p>Find your way around PCCOE campus</p>
+        </div>
+    </section>
+
+    <section class="campus-map-full">
+        <div class="container">
+            <div class="map-container-large">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2732825244357!2d73.76163980000003!3d18.651728800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e76c8fa205%3A0x1b210131915734fd!2sPCCOE%20-%20Pimpri%20Chinchwad%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1760078258615!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="500" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="campus-locations">
+                <h3>Key Campus Locations</h3>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <i class="fas fa-building"></i>
+                        <h4>Administration Building</h4>
+                        <p>Main building for administrative offices</p>
+                    </div>
+                    <div class="location-card">
+                        <i class="fas fa-book"></i>
+                        <h4>Central Library</h4>
+                        <p>Ground floor, Building 6</p>
+                    </div>
+                    <div class="location-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>IT Department</h4>
+                        <p>2nd floor, Building 6</p>
+                    </div>
+                    <div class="location-card">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Cafeteria</h4>
+                        <p>1st floor, Building 6</p>
+                    </div>
+                    <div class="location-card">
+                        <i class="fas fa-flask"></i>
+                        <h4>Laboratories</h4>
+                        <p>Building 7 & 9</p>
+                    </div>
+                    <div class="location-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Auditorium</h4>
+                        <p>Multipurpose hall, Building 6</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Sector No. 26, Pradhikaran, Nigdi, Pune, Maharashtra 411044</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Contact</h4>
+                        <p>020-27653000</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <h4>Website</h4>
+                        <p>www.pccoepune.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as other pages -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
