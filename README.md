@@ -80,7 +80,7 @@ Technology Stack
 
 Frontend: HTML, CSS, JavaScript (or React.js)  
 
-Backend (optional): Node.js / Express for dynamic content  
+Backend (optional): Node.js / Express for dynamic content and java using springboot 
 
 Deployment: GitHub Pages, Netlify, or Render  
 
